@@ -6,12 +6,16 @@ interface Props {
 }
 
 const { href, title, body } = Astro.props;
+
+import Typewriter from 'typewriter-effect';
 ---
 
 <li class="link-card">
 	<a href={href}>
 		<h2>
+			
 			{title}
+			
 			<span>&rarr;</span>
 		</h2>
 		<p>
@@ -39,7 +43,7 @@ const { href, title, body } = Astro.props;
 		padding: calc(1.5rem - 1px);
 		border-radius: 8px;
 		color: white;
-		background-color: #23262d;
+		background-color: #25232d;
 		opacity: 0.8;
 	}
 	h2 {
