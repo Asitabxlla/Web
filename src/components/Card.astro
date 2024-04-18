@@ -23,6 +23,9 @@ const { href, title, body } = Astro.props;
 </li>
 <style>
 	.link-card {
+		display: flex;
+		align-items: center;
+		text-align: center;
 		width: 200%;
 		height: 100%;
 		background-repeat: no-repeat;
@@ -34,32 +37,37 @@ const { href, title, body } = Astro.props;
 		background-size: 200%;
 		border-radius: 9px;
 		background-position: 100%;
-		transition: background-position 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+		transition: transform 1.2s ease-in-out;
 		box-shadow: inset 0 0 0 1px rgba(255, 0, 119, 0.5);
 	}
 	.link-card > a {
-		width: 100%;
+		width: 200%;
+		height: 100%;
 		text-decoration: none;
 		line-height: 1.4;
 		padding: calc(1.5rem - 1px);
 		border-radius: 8px;
 		color: rgb(255, 255, 255);
-		background-color: #19162579;
+		background-color: #241f3579;
 		opacity: 0.9;
 	}
 	h2 {
 		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		font-size: 2.50rem;
+		transition: cubic-bezier(1, 0, 0, 1)
 	}
 	p {
 		margin-top: 0.5rem;
 		margin-bottom: 0;
 	}
 	.link-card:is(:hover, :focus-within) {
+		transform: scale(1.02) ;
 		background-position: 0;
-		background: linear-gradient(to top, #3204fdba, #9907facc), url("/Miku.jpg") no-repeat top center;
+		background: linear-gradient(to top, #0429fdba, #fa0750cc), url("/Miku.jpg") no-repeat top center;
 		opacity: 0.9;
+		transition: transfom 0.8s;
+		transform: scale(1.02);
+		background-position: 100%;
 	}
 	.link-card:is(:hover, :focus-within) h2 {
 		color: rgb(var(--accent-light));

@@ -1,0 +1,26 @@
+---
+interface Props {
+	title: string;
+	body: string;
+	href: string;
+}
+
+const { href, title, body } = Astro.props;
+
+
+---
+
+<div class="card w-96 bg-base-100 shadow-xl image-full">
+    <figure><img src="/Miku.jpg" alt="Shoes" /></figure>
+    <a href={href}>
+		<h2>
+			{title}
+			<span>&rarr;</span>
+		</h2>
+		<p>
+			{body}
+		</p>
+	</a>
+      </div>
+    </div>
+  </div>
