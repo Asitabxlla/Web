@@ -6,21 +6,36 @@ import Typewriter from '../components/typewriter.jsx';
 
 <Layout title="Asitabxlla">
 	<main>
-		<h1>Asitabxlla </h1> 
-
-		<ul role="list" class="link-card-grid">
-
-			<Typewriter client:only>
-			</Typewriter>
-			
-			<Card
-				title="Comissions"
-				href="/about"
-				body="Learn more about me"
-		
-			/>
-			
-
-		
-	
+		<div class="flex items-center justify-center h-screen w-screen" >
+			<div class="grid md:grid-cols-2 gap-4">
+				<div class="">
+					<div>
+						<img src="Perfil.jpg" alt="Me"  class="rounded-xl w-80">
+					</div>
+					<div>
+					 	<Typewriter client:only/>
+					</div>
+					<div>
+					 	<h1 class="text-white">RSSS</h1>	
+					</div>
+				</div>
+				<div class="">
+					<div class="w-full h-full">
+						<Card
+							title="Comissions"
+							href="/about"
+							body="Learn more about me"
+						/>
+					</div>
+					<div class="w-full h-full mt-10">
+						<Card
+							title="Comissions"
+							href="/about"
+							body="Learn more about me"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
 </Layout>

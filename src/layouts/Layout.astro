@@ -16,67 +16,33 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-gray-900 flex">
 		<slot />
 	</body>
 </html>
 <style is:global>
-	h1 {
-		font-size:58px;
+	.typewriter {
+		font-size: 20px;
 		color: rgb(255, 255, 255);
 		font-weight: bold;
-		font-family: sans-serif;
-		accent-color: rgb(136, 58, 234);
 	}
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+	@keyframes typing {
+		from { width: 0 }
+		to { width: 100% }
 	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #171a24;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-		.typewriter {
-			font-size: 20px;
-			color: rgb(255, 255, 255);
-			font-weight: bold;}
-		@keyframes typing {	
-			from { width: 0 }
-			to { width: 100% }
-		}
-		
-		.myCursor {
- 			 animation: blink 1s infinite;
-			 color: rgb(255, 65, 65);
-			 font-size: 25px;
-			 font-weight: bold;
-			 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-             font-style:normal;
 
+	.myCursor {
+ 		 animation: blink 1s infinite;
+		 color: rgb(255, 65, 65);
+		 font-size: 25px;
+		 font-weight: bold;
+		 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+         font-style:normal;
+	}
+		@keyframes blink {
+		0% { opacity: 1; }
+		50% { opacity: 0; }
+		100% { opacity: 1; }
 		}
-			@keyframes blink {
-			0% { opacity: 1; }
-			50% { opacity: 0; }
-			100% { opacity: 1; }
-			}
 </style>
 
