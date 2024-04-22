@@ -8,7 +8,7 @@ const TypewriterComponent = () => {
         pauseFor: 2000,
         cursorClassName: 'myCursor',
         typewriter__cursor: '|',
-        strings: ['Im Asia', 'Artist','Concept Artist','Illustrator'],
+        strings: ['Hello, Im Asia!', 'Artist','Concept Artist','Illustrator'],
         pauseFor: 2000,
         deletechars: 10,
         autoStart: true,
