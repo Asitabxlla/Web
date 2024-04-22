@@ -34,13 +34,14 @@ const { href, title, body } = Astro.props;
 		background-image: url("/Miku.jpg")  ;
 		background-color: #fff6f6fb;
 		background-size: 200%;
-		border-radius: 9px;
+		border-radius: 10px;
 		background-position: 100%;
 		transition: transform 1.2s ease-in-out;
-		box-shadow: inset 0 0 0 1px rgba(255, 0, 119, 0.5);
+		border: 2px solid #FF5151;
+		backdrop-filter: blur(2px);
 	}
 	.link-card > a {
-		font: 1em sans-serif;
+		font: 1em "Jura", sans-serif;
 		width: 200%;
 		height: 100%;
 		text-decoration: none;
