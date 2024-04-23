@@ -18,18 +18,12 @@ const { title } = Astro.props;
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jura&family=Michroma&display=swap" />
 
 	</head>
-	<body class="bg-gray-900 flex">
+	<body class="bg-[url('/fondo.png')] flex">
 		<slot />
-	</body>17
+	</body>
 </html>
 <style is:global>
 
-	.body{
-		background-image: url("/fondo.png");
-		background-repeat: no-repeat;
-		background-size: ;
-	}
-	
 	.typewriter {
 		font-size: 20px;
 		font-family: "Jura", sans-serif;

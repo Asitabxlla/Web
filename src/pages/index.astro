@@ -1,53 +1,68 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Typewriter from '../components/typewriter.jsx';
-import Card2 from '../components/Card2.astro';
-
+import Hero from '../components/Hero.astro';
+import SocialIcon from '../components/SocialIcon.astro';
 ---
 
 
 <Layout title="Asitabxlla">
-	<main>
-		<div class="flex items-center justify-center h-screen w-screen" >
-			<div class="grid md:grid-cols-2 gap-3">
-				<div class="">
-					<div>
-						<img src="Perfil.jpg" alt="Me"  class="rounded-xl w-80 border-red">
-
-							<style>
-							.border-red {
-								border: 2px solid #FF5151;
-							}
-							</style>
-					</div>
-					<div>
-					 	<Typewriter client:only/>
-					</div>
-					<div>
-					 	<h1 class="text-white" >RSSS</h1>	
-					</div>
+    <main>
+        <div class="flex justify-center h-screen p-5">
+            <div class="max-w-md h-full bg-[#0f1825] border border-[#ff5151] p-4 rounded mr-10">
+                <div class="flex justify-center items-center">
+                    <img src="Perfil.jpg" alt="Me"  class="rounded-xl w-80 border-red-500 border-2">
+                </div>
+                <div class="text-center">
+                    <Typewriter client:only/>
+                </div>
+				<div class="divider divider-primary"></div>
+                <div class="m-5">
+                    <p class="text-pretty">Hola soy Asia, un continente, mi historia es un poc enrevesada, por que de hecho se podría decir que soy un continente inventado por los racistas europeos para separarse de los que me habitan, porque si lo miras rigurosamente no hay ninguna masa de agua separando el continente europeo del asiático. </p>
+                </div>
+				<div class="flex flex-row">
+					<SocialIcon
+						img='/instagram.svg'
+						socialName='Instagram'
+					/>
+					<SocialIcon
+						img='/instagram.svg'
+						socialName='Instagram'
+					/>
+					<SocialIcon
+						img='/instagram.svg'
+						socialName='Instagram'
+					/>
+					<SocialIcon
+						img='/instagram.svg'
+						socialName='Instagram'
+					/>
+					<SocialIcon
+						img='/instagram.svg'
+						socialName='Instagram'
+					/>										
+					<SocialIcon
+						img='/instagram.svg'
+						socialName='Instagram'
+					/>					
 				</div>
-				<nav>
-					<div class="w-full h-full">
-						<Card
-							title="Comissions"
-							href="/comissions"
-							body="I'm open for comissions!"
-						/>
-					</div>
-					<div class="w-full h-full mt-10">
-						<Card2
-							title="Portfolio"
-							href="/portfolio"
-							body="Check out my work!"
-						/>
-					</div>
-				</nav>
-		
-				</div>
-			</div>
-		</div>
-		
-	</main>
+            </div>
+            <div class="w-1/2"> 
+                <div class="">
+                    <Hero
+                        title='Comisiones'
+                        href='/miku'
+                        img='/Miku.jpg'
+                    >
+                </div>
+                <div class="">
+                    <Hero
+                        title='Comisiones'
+                        href='/miku'
+                        img='/Miku.jpg'
+                    >
+                </div>
+            </div>
+        </div>
+    </main>
 </Layout>

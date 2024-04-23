@@ -9,7 +9,6 @@ const TypewriterComponent = () => {
         cursorClassName: 'myCursor',
         typewriter__cursor: '|',
         strings: ['Hello, Im Asia!', 'Artist','Concept Artist','Illustrator'],
-        pauseFor: 2000,
         deletechars: 10,
         autoStart: true,
         loop: true,
