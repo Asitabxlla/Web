@@ -10,10 +10,16 @@ import Card2 from '../components/Card2.astro';
 <Layout title="Asitabxlla">
 	<main>
 		<div class="flex items-center justify-center h-screen w-screen" >
-			<div class="grid md:grid-cols-2 gap-4">
+			<div class="grid md:grid-cols-2 gap-3">
 				<div class="">
 					<div>
-						<img src="Perfil.jpg" alt="Me"  class="rounded-xl w-80">
+						<img src="Perfil.jpg" alt="Me"  class="rounded-xl w-80 border-red">
+
+							<style>
+							.border-red {
+								border: 2px solid #FF5151;
+							}
+							</style>
 					</div>
 					<div>
 					 	<Typewriter client:only/>
@@ -26,15 +32,15 @@ import Card2 from '../components/Card2.astro';
 					<div class="w-full h-full">
 						<Card
 							title="Comissions"
-							href="/about"
-							body="Learn more about me"
+							href="/comissions"
+							body="I'm open for comissions!"
 						/>
 					</div>
 					<div class="w-full h-full mt-10">
-						<Card
-							title="Comissions"
-							href="/about"
-							body="Learn more about me"
+						<Card2
+							title="Portfolio"
+							href="/portfolio"
+							body="Check out my work!"
 						/>
 					</div>
 				</nav>
