@@ -2,8 +2,10 @@
 interface Props {
     img: string
     socialName:string
+    href: string
+    
 }
-const {img, socialName} = Astro.props
+const {img, socialName, href} = Astro.props
 ---
-
+<a href={href}>
 <img src={img} alt={socialName} width="90" class="mr-3">
