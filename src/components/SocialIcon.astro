@@ -8,6 +8,8 @@ interface Props {
 const {img, socialName, href} = Astro.props
 ---
 
-<a href={href}>
-    <img src={img} alt={socialName} width="90" class="mr-3 hover:scale-105 hover:shadow-md hover:shadow-primary">
+<a href={href} class="">
+    <div class="border rounded border-primary transform rotate-45 inline-block p-1 hover:scale-105 hover:shadow-md hover:shadow-primary m-4">
+        <img src={img} alt={socialName} width="90" class="-rotate-45">
+    </div>
 </a>
