@@ -1,13 +1,16 @@
 ---
 import Layoutcoms from '../layouts/Layoutcoms.astro';
 import Header from '../components/Header.astro';
+import Carousel from '../components/Carousel.astro';
 ---
 
 
 <Layoutcoms title="Commissions">
-       
+  <head>
+        <link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+ </head>
         <Header/>
         <body>
-            
+            <Carousel />
         </body>
 </Layoutcoms>
