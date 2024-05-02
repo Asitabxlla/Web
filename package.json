@@ -20,6 +20,7 @@
     "@types/react-dom": "^18.2.25",
     "astro": "^4.6.4",
     "autoprefixer": "^10.4.19",
+    "flowbite": "^2.3.0",
     "grapheme-splitter": "^1.0.4",
     "postcss": "^8.4.38",
     "prop-types": "^15.8.1",
