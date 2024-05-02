@@ -1,0 +1,49 @@
+
+<section class="main swiper mySwiper">
+    <div class="wrapper swiper-wrapper">
+      <div class="slide swiper-slide">
+        <img src="Concept.png" alt="" class="image" />
+        <div class="image-data">
+          <h2>
+            Lineart <br />
+            Style
+          </h2>
+          <a href="#" class="button">Take a look!</a>
+        </div>
+      </div>
+      <div class="slide swiper-slide">
+        <img src="Miku.jpg" alt="" class="image" />
+        <div class="image-data">
+          <span class="text">Maricon.</span>
+          <h2>
+            Enjoy Our Exclusive <br />
+            Coffee and Cocktails
+          </h2>
+          <a href="#" class="button">About Us</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script> 
+     var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+  </script>
+
+</body>
