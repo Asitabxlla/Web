@@ -1,0 +1,60 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="Xay.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jura&family=Michroma&display=swap" />
+		<link rel="stylesheet" href="/css/swiper-bundle.min.css" />
+	</head>
+	<body class="bg-[url('/fondo.png')] ">
+		<slot />
+	</body>
+	<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+</html>
+
+<style is:global>
+
+    body {
+		background-color: #172439;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+    .card-title {
+        font-size: 40px;
+        font-family: "Jura", sans-serif;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        padding-bottom: 10%;
+        padding-top: 10%;
+        position: ;
+    }
+
+	p {
+		font-size: 20px;
+		font-family: "Jura", sans-serif;
+		color: rgb(255, 255, 255);
+		font-weight: normal;
+	}
+
+	.logo-class{
+		font-family: "Michroma", sans-serif;
+	}
+
+	.menu-class{
+		font-family: "Michroma", sans-serif;
+	}
+
+</style>

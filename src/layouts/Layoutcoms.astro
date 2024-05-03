@@ -16,7 +16,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jura&family=Michroma&display=swap" />
-		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="/css/swiper-bundle.min.css" />
 	</head>
 	<body class="bg-[url('/fondo.png')] ">
 		<slot />
@@ -47,117 +47,104 @@ const { title } = Astro.props;
 		font-family: "Michroma", sans-serif;
 	}
 
-	* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Jura", sans-serif;
+	{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: "Jura", sans-serif;
 	}
-
 	.main {
-	height: 100vh;
-	width: 100%;
+		height: 100vh;
+		width: 100%;
 	}
-
 	.wrapper,
 	.slide {
-	position: relative;
-	width: 100%;
-	height: 100%;
+		position: relative;
+		width: 100%;
+		height: 100%;
 	}
-
 	.slide {
-	overflow: hidden;
+	    overflow: hidden;
 	}
-
 	.slide::before {
-	content: "";
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.4);
-	z-index: 10;
+		content: "";
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+		z-index: 10;
 	}
-
 	.slide .image {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
 	}
-
 	.slide .image-data {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	width: 100%;
-	z-index: 100;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		width: 100%;
+		z-index: 100;
 	}
-
 	.image-data span.text {
-	font-size: 14px;
-	font-weight: 400;
-	color: #fff;
+		font-size: 14px;
+		font-weight: 400;
+		color: #fff;
 	}
-
 	.image-data h2 {
-	font-size: 45px;
-	font-weight: 600;
-	color: #fff;
+		font-size: 45px;
+		font-weight: 600;
+		font-family: 'Jura', sans-serif;
+		color: #fff;
 	}
-
 	a.button {
-	display: inline-block;
-	padding: 10px 20px;
-	border-radius: 25px;
-	color: #ffffff;
-	background: #ff5151;
-	text-decoration: none;
-	margin-top: 25px;
-	transition: all 0.6s ease;
+		display: inline-block;
+		padding: 10px 20px;
+		border-radius: 25px;
+		color: #fff;
+		background: #ff5151;
+		text-decoration: none;
+		margin-top: 25px;
+		transition: all 0.3s ease;
 	}
-
 	a.button:hover {
-	color: #fff;
-	background-color: #0609a1;
+		color: #ff5151;
+		background-color: #fff;
 	}
 
 	/* swiper button css */
 	.nav-btn {
-	border: #ff5151;
-	border-radius: 20%;
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		background: rgba(255, 255, 255, 0.178);
 	}
-
 	.nav-btn:hover {
-	background: #0609a1;
+		background: #0609a1;
 	}
-	
 	.swiper-button-next {
-	right: 50px;
+		right: 50px;
 	}
-
 	.swiper-button-prev {
-	left: 50px;
+		left: 50px;
 	}
-
 	.nav-btn::before,
 	.nav-btn::after {
-	font-size: 25px;
-	color: #ff5151;
+		font-size: 35px;
+		color: #ff5151;
 	}
-
 	.swiper-pagination-bullet {
-	opacity: 1;
-	height: 12px;
-	width: 12px;
-	background-color: #fff;
-	visibility: hidden;
+		opacity: 1;
+		height: 12px;
+		width: 12px;
+		background-color: #0609a1;
+		visibility: hidden;
 	}
-
 	.swiper-pagination-bullet-active {
-	border: 2px solid #fff;
-	background-color: #c87e4f;
+		border: 2px solid #0609a1;
+		background-color: #fff;
 	}
 
 	@media screen and (max-width: 768px) {
@@ -168,4 +155,5 @@ const { title } = Astro.props;
 		visibility: visible;
 	}
 	}
+
 </style>
