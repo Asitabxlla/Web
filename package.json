@@ -18,7 +18,7 @@
     "@radix-ui/react-navigation-menu": "^1.1.4",
     "@types/react": "^18.2.79",
     "@types/react-dom": "^18.2.25",
-    "astro": "^4.6.4",
+    "astro": "^4.7.1",
     "autoprefixer": "^10.4.19",
     "flowbite": "^2.3.0",
     "grapheme-splitter": "^1.0.4",
