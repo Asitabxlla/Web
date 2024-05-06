@@ -28,7 +28,13 @@ const { title } = Astro.props;
 		background-color: #172439;
 		background-size: cover;
 		background-repeat: no-repeat;
+		overflow-y: hidden;
 	}
+	@media (max-width: 768px) {
+		body {
+			overflow: auto; 
+		}
+		}
 	
 	p {
 		font-size: 20px;
@@ -60,6 +66,7 @@ const { title } = Astro.props;
 		50% { opacity: 0; }
 		100% { opacity: 1; }
 		}
+		
 
 	
 	
