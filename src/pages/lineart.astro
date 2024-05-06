@@ -7,25 +7,27 @@ import Card from '../components/Card.astro';
 <LayoutRefs title="Lineart">
      <Header />
         <body>
-            <button class="btn btn-active btn-primary mx-20 mt-10">Primary</button>
-            <div class="m-10 h-screen grid grid-row-3 gap-4 ">
+            <a href="/commissions" class="text-accent">
+                 <button class="btn btn-active btn-primary mx-10 mt-10 shadow-xl hover:bg-accent hover:text-white">Back to Commissions</button>
+            </a> 
+            
+            <div class="m-5 h-screen grid grid-row-3 gap-10 ">
                 <Card
                 title='Lineart Bust'
-                img='Xayline.png'
-                p="uwu"
-                span='15€'/>
+                img='bustline.png'
+                h5='15€'
+                />
                 <Card
                 title='Lineart 1'
                 img='Xayline.png'
-                p="uwu"
-                span='15€'/>
+                h5=''
+                />
                 <Card
                 title='Lineart 1'
-                img='Xayline.png'
-                p="uwu"
-                span='15€'/>
+                img='bustline.svg'
+                h5=''
+                />
             </div>
-            
         </body>
   
 </LayoutRefs>
