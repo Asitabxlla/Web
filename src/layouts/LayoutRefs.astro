@@ -18,7 +18,7 @@ const { title } = Astro.props;
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jura&family=Michroma&display=swap" />
 		<link rel="stylesheet" href="/css/swiper-bundle.min.css" />
 	</head>
-	<body class="bg-[url('/fondo.png')] ">
+	<body class="background-class bg-[url('/fondovert.png')] ">
 		<slot />
 	</body>
 	<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
@@ -52,6 +52,10 @@ const { title } = Astro.props;
 			margin: 0%;
 		}
 		
+	}
+
+	span {
+		font-family: "Jura", sans-serif;
 	}
 
 	ul {

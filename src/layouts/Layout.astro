@@ -25,6 +25,7 @@ const { title } = Astro.props;
 <style is:global>
 
 	body {
+		
 		background-color: #172439;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -36,16 +37,16 @@ const { title } = Astro.props;
 			padding: auto;
 		}
 		}
-	
+
 	p {
-		font-size: 20px;
+		font-size: 1.35rem;
 		font-family: "Jura", sans-serif;
 		color: rgb(255, 255, 255);
 		font-weight: normal;
 	}
 
 	.typewriter {
-		font-size: 20px;
+		font-size: 2rem;
 		font-family: "Michroma", sans-serif;
 		color: rgb(255, 255, 255);
 		font-weight: bold;
@@ -58,7 +59,7 @@ const { title } = Astro.props;
 	.myCursor {
  		 animation: blink 1s infinite;
 		 color: #FF5151;
-		 font-size: 1.8rem;
+		 font-size: 2rem;
 		 font-weight: bold;
 		 font-family:sans-serif;
 	}
@@ -68,12 +69,55 @@ const { title } = Astro.props;
 		100% { opacity: 1; }
 		}
 		
-	.icon {
-		width: 100px;
-		height: 100px;
+	.socialcard {
+		border-radius: 11px;
+		padding: 45px;
+		margin: 50px;
+		margin-left: 13%;
+		margin-top: 15px;
+		margin-bottom: 4%;
+		align-self: center;
+		width: 900px;
+		height: 850px;
 	}
-
+	@media screen and (max-width: 768px) {
+		.socialcard {
+			margin-left: 15%;
+			width: 90%;
+		}
+		
+	}
 	
+	.artcard	{
+		border-radius: 11px;
+		margin: 50px;
+		margin-top: 30px;
+		margin-bottom: 4%;
+		align-self: center;
+		width: 1200px;
+		height: auto;
+	}
+	@media screen and (max-width: 768px) {
+		.artcard {
+			margin-left: 15%;
+			width: 90%;
+		}
+		
+	}
+	
+	.socialicon {
+
+	}
+	@media screen and (max-width: 768px) {
+		.socialicon {
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			width: 120%;
+			margin-left: -10%;
+		}
+		
+	}
 	
 </style>
 

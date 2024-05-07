@@ -2,20 +2,21 @@
 import Header from '../components/Header.astro';
 import LayoutRefs from '../layouts/LayoutRefs.astro';
 import Card from '../components/Card.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <LayoutRefs title="Lineart">
      <Header />
-        <body>
+        <body class="bg-scroll">
             <a href="/commissions" class="text-accent">
                  <button class="btn btn-active btn-primary mx-10 mt-10 shadow-xl hover:bg-accent hover:text-white">Back to Commissions</button>
             </a> 
             
-            <div class="m-5 h-screen grid grid-row-3 gap-10 ">
+            <div class="m-5 grid grid-row-3 gap-10 ">
                 <Card
                 title='Lineart Bust'
                 img='bustline.png'
-                h5='15€'
+                h5='10€'
                 />
                 <Card
                 title='Lineart 1'
@@ -29,5 +30,6 @@ import Card from '../components/Card.astro';
                 />
             </div>
         </body>
-  
+        
+        <Footer />
 </LayoutRefs>
