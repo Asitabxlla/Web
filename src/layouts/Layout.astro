@@ -31,6 +31,11 @@ const { title } = Astro.props;
 		background-size: auto;
 		background-repeat: repeat;
 	}
+
+	body {
+
+		overflow: hidden;
+	}
 	@media (max-width: 768px) {
 		body {
 			overflow: auto; 
@@ -46,7 +51,7 @@ const { title } = Astro.props;
 	}
 
 	.typewriter {
-		font-size: 2rem;
+		font-size: 1rem;
 		font-family: "Michroma", sans-serif;
 		color: rgb(255, 255, 255);
 		font-weight: bold;

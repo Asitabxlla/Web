@@ -9,9 +9,9 @@ interface Props {
 const { img, title, h5} = Astro.props;
 ---
 
-<div class="card lg:card-side bg-secondary shadow-xl border-primary border-2 rounded-md flex flex-col ">
-    <div class="rounded-md flex justify-center">
-        <img class="p-5" src={img} alt="lineart" />
+<div class="card lg:card-side bg-secondary shadow-xl border-primary border-2 rounded-md overflow-hidden flex flex-col ">
+    <div class="flex justify-center">
+        <img class="" src={img} alt="lineart" />
     </div>   
     <div class="card-body">
         <h2 class="card-title text-4xl">{title}</h2>
