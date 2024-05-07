@@ -18,18 +18,18 @@ const { title } = Astro.props;
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jura&family=Michroma&display=swap" />
 
 	</head>
-	<body class="bg-[url('/fondo.png')] flex">
+	<body class="flex">
 		<slot />
 	</body>
 </html>
 <style is:global>
 
-	body {
-		
+	html {
+		background-image: url(fondo.png);
+		background-attachment:fixed ;
 		background-color: #172439;
-		background-size: cover;
-		background-repeat: no-repeat;
-		overflow-y: hidden;
+		background-size: auto;
+		background-repeat: repeat;
 	}
 	@media (max-width: 768px) {
 		body {
