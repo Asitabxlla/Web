@@ -16,11 +16,31 @@
 			"dest": "_render"
 		},
 		{
-			"src": "^\\/comisiones\\/?$",
+			"src": "^\\/charactersheet\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/commissions\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/heavyinkstyle\\/?$",
 			"dest": "_render"
 		},
 		{
 			"src": "^\\/lineart\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/portfolio\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/renderstyle\\/?$",
+			"dest": "_render"
+		},
+		{
+			"src": "^\\/traditionalart\\/?$",
 			"dest": "_render"
 		},
 		{
