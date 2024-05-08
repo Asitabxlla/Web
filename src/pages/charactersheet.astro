@@ -1,13 +1,40 @@
 --- 
 import Header from '../components/Header.astro';
 import LayoutRefs from '../layouts/LayoutRefs.astro';
+import Card from '../components/Card.astro';
+import Footer from '../components/Footer.astro';
+import CScard from '../components/CScard.astro';
 ---
 
-<LayoutRefs title="Character Sheet">
-    <Header />
-    <body class="bg-scroll">
-        <a href="/commissions" class="text-accent">
-            <button class="btn btn-active btn-primary mx-10 mt-10 shadow-xl hover:bg-accent hover:text-white">Back to Commissions</button>
-        </a> 
-    </body>
+<LayoutRefs title="Render Style">
+     <Header />
+        <body class="bg-scroll">
+            <a href="/commissions" class="">
+                 <button class="btn1 text-white bg-primary rounded-md ml-40 my-10 shadow-xl hover:bg-accent hover:text-white">
+                    <img src="back.svg" class="h-8" alt="back svg">Commissions</img>
+                </button>
+            </a> 
+            
+            <div class="m-5 grid grid-row-2 gap-10 w-auto h-auto ">
+                <CScard
+                title='Character Sheet'
+                img='halfconcept.png'
+                h5='60€'
+                li1='The price its just a stimation I will contact you to disscus the detailed price'
+                li2='References are needed, or a moodboard with all the details you expect in the design'
+                li3='If you wish a different view it let me know upfront'
+                />
+                <CScard
+                title='Reference Sheet'
+                img='completconcept.png'
+                h5='80€'
+                li1='The price its just a stimation I will contact you to disscus the detailed price'
+                li2='References are needed, or a moodboard with all the details you expect in the design'
+                li3='If you wish a different view it let me know upfront'
+                />
+            </div>
+        </body> 
+        <footer>
+            <Footer />  
+        </footer> 
 </LayoutRefs>

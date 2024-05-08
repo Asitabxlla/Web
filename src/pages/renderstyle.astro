@@ -1,14 +1,47 @@
 --- 
 import Header from '../components/Header.astro';
 import LayoutRefs from '../layouts/LayoutRefs.astro';
+import Card from '../components/Card.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-
 <LayoutRefs title="Render Style">
-    <Header />
-    <body class="bg-scroll">
-        <a href="/commissions" class="text-accent">
-             <button class="btn btn-active btn-primary mx-10 mt-10 shadow-xl hover:bg-accent hover:text-white">Back to Commissions</button>
-        </a> 
-    </body>
+     <Header />
+        <body class="bg-scroll">
+            <a href="/commissions" class="">
+                 <button class="btn1 text-white bg-primary rounded-md ml-40 my-10 shadow-xl hover:bg-accent hover:text-white">
+                    <img src="back.svg" class="h-8" alt="back svg">Commissions</img>
+                </button>
+            </a> 
+            
+            <div class="m-5 grid grid-row-3 gap-10 ">
+                <Card
+                title='Bust Heavy Ink Style'
+                img='bustrend.PNG'
+                h5='25€'
+                li1='Extra character: + 80% original price'
+                li2='Complicated details or background: +15€'
+                li3='Maximum characters per piece: 3'
+                />
+                <Card
+                title='Half Body Lineart'
+                img='halfrend.png'
+                h5='50€'
+                li1='Extra character: + 80% original price'
+                li2='Complicated details or background: +15€'
+                li3='Maximum characters per piece: 3'
+                />
+                <Card
+                title='Full Body Lineart'
+                img='fullrend.png'
+                h5='70€'
+                li1='Extra character: + 80% original price'
+                li2='Complicated details or background: +15€'
+                li3='Maximum characters per piece: 3'
+                />
+            </div>
+        </body> 
+        <footer>
+            <Footer />  
+        </footer> 
 </LayoutRefs>

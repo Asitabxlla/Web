@@ -8,25 +8,36 @@ import Footer from '../components/Footer.astro';
 <LayoutRefs title="Lineart">
      <Header />
         <body class="bg-scroll">
-            <a href="/commissions" class="text-accent">
-                 <button class="btn btn-active btn-primary mx-10 mt-10 shadow-xl hover:bg-accent hover:text-white">Back to Commissions</button>
+            <a href="/commissions" class="">
+                 <button class="btn1 text-white bg-primary rounded-md ml-40 my-10 shadow-xl hover:bg-accent hover:text-white">
+                    <img src="back.svg" class="h-8" alt="back svg">Commissions</img>
+                </button>
             </a> 
             
             <div class="m-5 grid grid-row-3 gap-10 ">
                 <Card
-                title='Lineart Bust'
+                title='Bust Lineart'
                 img='bustline.png'
                 h5='10€'
+                li1='Extra character: + 80% original price'
+                li2='Complicated details or background: +15€'
+                li3='Maximum characters per piece: 3'
                 />
                 <Card
-                title='Lineart 1'
-                img='Xayline.png'
-                h5=''
+                title='Half Body Lineart'
+                img='halfline.png'
+                h5='15€'
+                li1='Extra character: + 80% original price'
+                li2='Complicated details or background: +15€'
+                li3='Maximum characters per piece: 3'
                 />
                 <Card
-                title='Lineart 1'
-                img='bustline.svg'
-                h5=''
+                title='Full Body Lineart'
+                img='fullline.png'
+                h5='25€'
+                li1='Extra character: + 80% original price'
+                li2='Complicated details or background: +15€'
+                li3='Maximum characters per piece: 3'
                 />
             </div>
         </body> 

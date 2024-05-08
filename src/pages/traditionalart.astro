@@ -1,13 +1,47 @@
 --- 
 import Header from '../components/Header.astro';
 import LayoutRefs from '../layouts/LayoutRefs.astro';
+import Card from '../components/Card.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<LayoutRefs title="Traditional Art">
-    <Header />
-    <body class="bg-scroll">
-        <a href="/commissions" class="text-accent">
-             <button class="btn btn-active btn-primary mx-10 mt-10 shadow-xl hover:bg-accent hover:text-white">Back to Commissions</button>
-        </a> 
-    </body>
+<LayoutRefs title="Lineart">
+     <Header />
+        <body class="bg-scroll">
+            <a href="/commissions" class="">
+                 <button class="btn1 text-white bg-primary rounded-md ml-40 my-10 shadow-xl hover:bg-accent hover:text-white">
+                    <img src="back.svg" class="h-8" alt="back svg">Commissions</img>
+                </button>
+            </a> 
+            
+            <div class="m-5 grid grid-row-3 gap-10 ">
+                <Card
+                title='Traditional Pieces'
+                img='traditional.png'
+                h5='15€'
+                li1='The price may change depending on the size of the piece.'
+                li2='Complicated details or background: +15€'
+                li3='I can do international shipping, but the price is not included in the commission price.'
+                />
+                <Card
+                title='Tiny Canvas'
+                img='tiny.png'
+                h5='20€'
+                li1='The tiny canvas is done in gouache on a 8x8cm linen canvas.'
+                li2='The easel is included in the price.'
+                li3='I can do international shipping, but the price is not included in the commission price.'
+                />
+                <Card
+                title='Pyrography'
+                img='pyro.png'
+                h5='20€'
+                li1='The price may change depending on the size of the piece.'
+                li2='Complicated details: +15€'
+                li3='I can do international shipping, but the price is not included in the commission price.'
+                />
+            </div>
+        </body> 
+        <footer>
+            <Footer />  
+        </footer> 
 </LayoutRefs>
