@@ -7,7 +7,6 @@ import 'swiper/css/bundle';
 import { Navigation, Pagination } from 'swiper/modules';
 import vercel from "@astrojs/vercel/serverless";
 
-// https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), react(),],
   output: "server",

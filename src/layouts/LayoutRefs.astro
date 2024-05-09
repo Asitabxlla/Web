@@ -32,10 +32,36 @@ const { title } = Astro.props;
 		background-repeat: repeat-x;
 	}
 
+	h1 {
+		font-family: "Michroma", sans-serif;
+		color: rgb(255, 255, 255);
+		font-weight: bold;
+		margin: 0%;
+	}
+
+	p {
+		font-family: "Jura", sans-serif;
+		color: rgb(255, 255, 255);
+		font-weight: normal;
+		margin: 3%;
+	}
+
+	.li1 {
+		font-family: "Michroma", sans-serif;
+		color: rgb(255, 255, 255);
+	}
+
+	.background {
+		background-color: #0f1825;
+		background-size: cover;
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
+
     h2 {
         font-family: "Michroma", sans-serif;
         color: rgb(255, 255, 255);
-        font-weight: bold;
+        font-weight: bold; 
     }
 
 	h5 {
@@ -60,6 +86,10 @@ const { title } = Astro.props;
 		}
 	}
 
+	span {
+		font-family: "Michroma", sans-serif;
+	}
+
 	.span1 {
 		font-family: "Jura", sans-serif;
 	}
@@ -67,7 +97,6 @@ const { title } = Astro.props;
 	.ul2 {
 		font-family: "Jura", sans-serif;
 		color: rgb(255, 255, 255);
-		font-weight: normal;
 	}
 	
 	.body-text{
@@ -132,6 +161,26 @@ const { title } = Astro.props;
 
 	.menu-class{
 		font-family: "Michroma", sans-serif;
+	}
+
+
+	.socialicon {
+		display: flex;
+  		align-items: center;
+  		justify-content: center;
+	}
+
+	.socialicon div {
+		margin: 20%;
+		margin-top: 0%;
+	}
+	@media screen and (max-width: 768px) {
+		.socialicon {
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		}
+		
 	}
 
 </style>

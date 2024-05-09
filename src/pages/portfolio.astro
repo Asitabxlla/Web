@@ -1,9 +1,17 @@
 --- 
 import Header from '../components/Header.astro';
 import LayoutRefs from '../layouts/LayoutRefs.astro';
+import Gallery from '../components/Gallery.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 
 <LayoutRefs title="Potfolio">
     <Header />
+    <div class="background container border border-primary rounded-md mx-auto px-4 py-8">
+        <h1 class="text-6xl font-bold text-center underline decoration-primary">My Portfolio</h1>
+        <p class="text-center text-2xl">Here are some of my most representative artwork creations</p>
+        <Gallery />
+    </div>
+    <Footer />
 </LayoutRefs>

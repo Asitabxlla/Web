@@ -1,3 +1,7 @@
+---
+import SocialIcon from '../components/SocialIcon.astro';
+---
+
 <footer class="bg-secondary shadow">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
@@ -5,22 +9,38 @@
                 <img src="Xay.svg" class="h-8" alt="Literally me" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Asitabxlla</span>
             </a>
-            <ul class="flex flex-wrap items-center mb-6 text-lg font-medium text-gray-200 sm:mb-0">
+            <ul class="ul2 flex flex-wrap items-center mb-6 text-lg font-medium text-gray-200 sm:mb-0">
                 <li>
                     <a href="/" class="hover:underline hover:text-primary me-4 md:me-6">About</a>
                 </li>
                 <li>
-                    <a href="#" class="hover:underline hover:text-primary me-4 md:me-6">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline hover:text-primary me-4 md:me-6">Terms Of Service</a>
-                </li>
-                <li>
-                    <a href="#" class="hover:underline hover:text-primary">Contact</a>
+                    <a href="/tos" class="hover:underline hover:text-primary me-4 md:me-6">Terms Of Service</a>
                 </li>
             </ul>
         </div>
         <hr class="my-6 border-primary sm:mx-auto lg:my-8" />
+        <div class="socialicon flex flex-row justify-center ">
+            <SocialIcon
+                img='/tw.svg'
+                socialName='Twitter'
+                href='https://twitter.com/asitabxlla'                  
+            />
+            <SocialIcon
+                img='/insta.svg'
+                socialName='Instagram'
+                href='https://www.instagram.com/asitabxlla/'
+            />
+            <SocialIcon
+                img='/devian.svg'
+                socialName='DeviantArt'
+                href='https://www.deviantart.com/asitadraws'
+            />
+            <SocialIcon
+                img='/mail.svg'
+                socialName='Mail'
+                href='mailto:asiabxlla@gmail.com'
+            />				
+        </div>
         <span class="span1 block text-lg text-gray-200 sm:text-center">© 2024 <a href="/" class="hover:underline hover:text-primary">Asitabxlla™</a>. All Rights Reserved.</span>
     </div>
 </footer>
