@@ -3,11 +3,13 @@ import Layout from '../layouts/Layout.astro';
 import Typewriter from '../components/typewriter.jsx';
 import Hero from '../components/Hero.astro';
 import SocialIcon from '../components/SocialIcon.astro';
+import Analytics from '@vercel/analytics/astro'
 ---
 
 
 <Layout title="Asitabxlla">
     <main class="">
+        <Analytics />
         <div class="flex flex-col md:flex-row md:content-center" >
             <div class=" socialcard card max-w-md h-full bg-[#0f1825] border border-[#ff5151] p-5 rounded">
                 <div class="flex justify-center items-center">
